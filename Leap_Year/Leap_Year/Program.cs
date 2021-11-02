@@ -10,11 +10,11 @@ namespace Leap_Year
     {
         static void Main(string[] args)
         {
-            int  Leapyear;
+            
             Console.WriteLine("Enter the numebr:");
-            int number = int.Parse(Console.ReadLine());
-            Leapyear = number % 4;
-            if (Leapyear == 0)
+            int userInput = int.Parse(Console.ReadLine());
+            if (userInput % 400 == 0 || userInput % 4 == 0 && userInput % 100 != 0)
+               
             {
                 Console.WriteLine("Numbre is Leapyear");
             }
